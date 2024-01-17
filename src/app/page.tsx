@@ -1,7 +1,9 @@
+import Hero from './(root)/Hero';
+
 const Home = () => {
   return (
     <main>
-      <div>Hello</div>
+      <Hero />
     </main>
   );
 };

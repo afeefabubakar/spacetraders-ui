@@ -2,6 +2,7 @@
 
 import { ILinks } from '@/lib/types';
 import Link from 'next/link';
+import NavigationDrawer from './NavigationDrawer';
 import React from 'react';
 import ThemesButton from './ThemesButton';
 import { cn } from '@/lib/utils';
@@ -41,7 +42,10 @@ const Header = () => {
         </nav>
       </div>
 
-      <ThemesButton />
+      <div className='flex items-center gap-4'>
+        <ThemesButton />
+        <NavigationDrawer links={links} />
+      </div>
     </header>
   );
 };

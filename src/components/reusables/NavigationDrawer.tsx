@@ -15,16 +15,17 @@ const NavigationDrawer = ({ links }: { links: ILinks[] }) => {
         <Menu aria-label='Open navigation drawer' />
       </DrawerTrigger>
       <DrawerContent className='px-4 pb-4'>
-        <nav className='flex flex-col items-center gap-4 mt-4'>
+        <nav className='flex flex-col items-end gap-4 mt-4'>
           {links.map((link) => (
             <Link
               key={link.href}
               href={link.href}
               className={cn(
-                'hover:text-accent',
-                link.href === pathname ? 'text-accent pointer-events-none' : ''
+                'flex flex-row-reverse items-center hover:text-link',
+                link.href === pathname ? 'text-link pointer-events-none' : ''
               )}
             >
+              {link.icon}
               {link.label}
             </Link>
           ))}

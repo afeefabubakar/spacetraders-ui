@@ -20,7 +20,7 @@
     --accent-foreground: 194 84% 5%;
     --destructive: 0 85% 60%;
     --destructive-foreground: 194 84% 5%;
-    --link: ;
+    --link: 20 100% 38%;
     --border: 194 86% 20%;
     --input: 194 86% 20%;
     --ring: 21 87% 40%;
@@ -44,6 +44,7 @@
     --accent-foreground: 194 84% 95%;
     --destructive: 0 62% 30%;
     --destructive-foreground: 194 84% 10%;
+    --link: 20 100% 50%;
     --border: 194 87% 60%;
     --input: 194 86% 80%;
     --ring: 21 87% 60%;

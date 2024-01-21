@@ -20,7 +20,7 @@ const ThemesButton = () => {
           variant='outline'
           onClick={() => setTheme('dark')}
           name='theme-toggler'
-          className='px-2 py-1'
+          className='px-2 py-1 border-0 md:border'
         >
           <Sun aria-label='Toggle dark mode' />
         </Button>
@@ -29,7 +29,7 @@ const ThemesButton = () => {
           variant='outline'
           onClick={() => setTheme('light')}
           name='theme-toggler'
-          className='px-2 py-1'
+          className='px-2 py-1 border-0 md:border'
         >
           <Moon aria-label='Toggle light mode' />
         </Button>

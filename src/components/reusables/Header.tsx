@@ -1,5 +1,6 @@
 'use client';
 
+import { Home, Rocket } from 'lucide-react';
 import { ILinks } from '@/lib/types';
 import Link from 'next/link';
 import NavigationDrawer from './NavigationDrawer';
@@ -12,10 +13,12 @@ const links: ILinks[] = [
   {
     label: 'Home',
     href: '/',
+    icon: <Home size={16} className='ml-2' />,
   },
   {
     label: 'Get Started',
     href: '/get-started',
+    icon: <Rocket size={16} className='ml-2' />,
   },
 ];
 
@@ -32,8 +35,8 @@ const Header = () => {
               key={link.href}
               href={link.href}
               className={cn(
-                'text-foreground hover:text-accent transition-colors',
-                pathname === link.href ? 'text-accent pointer-events-none' : ''
+                'text-foreground hover:text-link transition-colors',
+                pathname === link.href ? 'text-link pointer-events-none' : ''
               )}
             >
               {link.label}

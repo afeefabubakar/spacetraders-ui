@@ -6,20 +6,20 @@ import Providers from '@/components/providers/Providers';
 const kodeMono = Kode_Mono({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-    title: 'Spacetraders UI',
-    description: 'An unofficial UI made by Afeef for Spacetraders, an API-based game.',
+  title: 'Spacetraders UI',
+  description: 'An unofficial UI made by Afeef for Spacetraders, an API-based game.',
 };
 
 export default function RootLayout({
-    children,
+  children,
 }: Readonly<{
-    children: React.ReactNode;
+  children: React.ReactNode;
 }>) {
-    return (
-        <html lang='en'>
-            <body className={kodeMono.className}>
-                <Providers>{children}</Providers>
-            </body>
-        </html>
-    );
+  return (
+    <html lang='en'>
+      <body className={kodeMono.className}>
+        <Providers>{children}</Providers>
+      </body>
+    </html>
+  );
 }

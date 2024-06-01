@@ -1,6 +1,6 @@
 {
-    "extends": "next/core-web-vitals",
-    "rules": {
-        "sort-imports": "warn"
-    }
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "sort-imports": "warn"
+  }
 }
